@@ -1,0 +1,90 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.CardsContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.Card {
+  width: 175px;
+  height: 275px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  margin: 0 10px;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.Card:hover {
+  box-shadow: 3px 4px 4px 3px rgba(0, 0, 0, 0.4);
+}
+
+.Card h2 {
+  margin: 0;
+}
+
+.Card img {
+  height: 70px;
+  border-radius: 100%;
+}
+
+.Card li {
+  list-style: none;
+  margin-left: -40px;
+  margin-top: 0;
+  margin-bottom: 1px;
+  padding: 0;
+}
+
+/* Reload button */
+.Reload {
+  box-shadow: 4px 9px 10px -4px #3dc21b;
+  background:linear-gradient(to bottom, #64b87a 5%, #5cbf2a 100%);
+  background-color:#64b87a;
+  border-radius:5px;
+  border:1px solid #18ab29;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  font-weight:bold;
+  padding:13px 32px;
+  text-decoration:none;
+  text-shadow:0px 2px 0px #2f6627;
+}
+.Reload:hover {
+  background:linear-gradient(to bottom, #5cbf2a 5%, #64b87a 100%);
+  background-color:#5cbf2a;
+}
+.Reload:active {
+  position:relative;
+  top:1px;
+}
+
+/* winning and losing colors */
+.greenBorder .CardsContainer:nth-child(1) .Card {
+  border: 3px solid green;
+}
+
+.greenBorder .CardsContainer:nth-child(3) .Card {
+  border: 3px solid red;
+}
+
+.redBorder .CardsContainer:nth-child(1) .Card {
+  border: 3px solid red;
+}
+
+.redBorder .CardsContainer:nth-child(3) .Card {
+  border: 3px solid green;
+}
